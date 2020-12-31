@@ -1,10 +1,11 @@
-name: Dyniva Article
+name: 'Dyniva Article'
 description: 'Provides Article content type and related configuration. Use <em>articles</em> for time-sensitive content like news, press releases or blog posts.'
 type: module
 core: 8.x
 dependencies:
   - field
   - field_group
+  - language
   - layout_builder
   - media
   - node

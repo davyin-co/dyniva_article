@@ -1,0 +1,41 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.article.attached_media
+    - field.field.node.article.body
+    - field.field.node.article.category
+    - field.field.node.article.department
+    - field.field.node.article.featured_media
+    - field.field.node.article.layout_builder__layout
+    - field.field.node.article.layout_selection
+    - node.type.article
+  module:
+    - text
+    - user
+id: node.article.teaser
+targetEntityType: node
+bundle: article
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    weight: 0
+    region: content
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    label: hidden
+  links:
+    weight: 100
+    region: content
+hidden:
+  attached_media: true
+  category: true
+  department: true
+  featured_media: true
+  langcode: true
+  layout_builder__layout: true
+  layout_selection: true
+  search_api_excerpt: true
