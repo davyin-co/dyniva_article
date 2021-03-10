@@ -1,9 +1,12 @@
+uuid: dfd909c6-e239-4ba7-95fb-3ccf3f791005
 langcode: en
 status: true
 dependencies:
   module:
     - media
     - node
+_core:
+  default_config_hash: K3QCHvwquKMGPWXnRO8p2Bs-OG0BKp1Zk2frFjttwtw
 id: node.featured_media
 field_name: featured_media
 entity_type: node

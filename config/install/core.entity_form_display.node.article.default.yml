@@ -2,14 +2,11 @@ langcode: en
 status: true
 dependencies:
   config:
-    - entity_browser.browser.multiple_image_browser
     - field.field.node.article.attached_media
     - field.field.node.article.body
     - field.field.node.article.category
     - field.field.node.article.department
     - field.field.node.article.featured_media
-    - field.field.node.article.layout_builder__layout
-    - field.field.node.article.layout_selection
     - node.type.article
   module:
     - entity_browser
@@ -155,4 +152,3 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
-  layout_builder__layout: true

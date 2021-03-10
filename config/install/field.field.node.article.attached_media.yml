@@ -3,9 +3,6 @@ status: true
 dependencies:
   config:
     - field.storage.node.attached_media
-    - media.type.document
-    - media.type.file
-    - media.type.gallery
     - media.type.image
     - node.type.article
 id: node.article.attached_media

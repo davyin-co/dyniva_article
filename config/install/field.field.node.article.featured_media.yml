@@ -1,9 +1,13 @@
+uuid: 3e101836-3c66-4845-aac8-908e3ebc0b60
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.featured_media
+    - media.type.image
     - node.type.article
+_core:
+  default_config_hash: gGxi0qQiTfew12YSRyuddbj4czG33brCr6CLkJ64GEA
 id: node.article.featured_media
 field_name: featured_media
 entity_type: node
@@ -16,5 +20,11 @@ default_value: {  }
 default_value_callback: ''
 settings:
   handler: 'default:media'
-  handler_settings: {  }
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
 field_type: entity_reference
