@@ -1,3 +1,4 @@
+uuid: 120571cb-dcb1-4de9-bc80-badf9d3931e8
 langcode: en
 status: true
 dependencies:
@@ -9,7 +10,6 @@ dependencies:
     - field.field.node.article.featured_media
     - node.type.article
   module:
-    - entity_browser
     - field_group
     - media_library
     - path
@@ -34,6 +34,8 @@ third_party_settings:
         id: ''
         classes: ''
       label: 'Basic Information'
+_core:
+  default_config_hash: qsQDMiXDHo0PllZ1N4wo-IJXK2FjJgkb0glJY84N-OY
 id: node.article.default
 targetEntityType: node
 bundle: article
@@ -77,16 +79,9 @@ content:
   featured_media:
     weight: 6
     settings:
-      entity_browser: multiple_image_browser
-      field_widget_display: label
-      field_widget_edit: true
-      field_widget_remove: true
-      open: true
-      selection_mode: selection_append
-      field_widget_replace: false
-      field_widget_display_settings: {  }
+      media_types: {  }
     third_party_settings: {  }
-    type: entity_browser_entity_reference
+    type: media_library_widget
     region: content
   langcode:
     type: language_select
@@ -151,4 +146,4 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden:
+hidden: {  }

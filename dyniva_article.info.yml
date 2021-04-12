@@ -4,13 +4,14 @@ type: module
 core: 8.x
 dependencies:
   - field
-  - field_group
   - language
-  - layout_builder
-  - views_add_button
   - media
   - node
   - path
   - taxonomy
   - text
   - user
+  - media_library
+  - field_group
+  - layout_builder
+  - views_add_button
